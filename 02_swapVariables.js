@@ -14,3 +14,8 @@ var2 =temp;
 // After Swapping
 console.log("After Swap");
 console.log(var1,var2);
+
+
+// typeOf Function Which tells us which type of Data is stored in perticular variable
+temp = typeof "MOhit";
+console.log(temp);
