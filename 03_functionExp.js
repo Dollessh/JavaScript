@@ -4,6 +4,7 @@ var square = function(value)
     console.log(value*value);
 }
 square(5);
+
 console.log("Area of Triangle");
 var triangle = function(base,height)
 {
