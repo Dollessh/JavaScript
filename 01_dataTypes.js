@@ -1,10 +1,10 @@
-var rollNo = 01;
-var fName = "Dollesh";
+var rollNo = 01; // Numeric type of data
+var fName = "Dollesh"; //String type of data
 var lName ="Rathod";
-var isMarried = false;
+var isMarried = false; //Boolean type of data
 
 // lets check the what typeOf Data we stored in respective data type
-console.log(typeof 01);
+console.log(typeof 01);//number
 console.log(typeof "Dollesh");
 console.log(typeof "Rathod");
 console.log(typeof false);

@@ -19,3 +19,21 @@ console.log(var1,var2);
 // typeOf Function Which tells us which type of Data is stored in perticular variable
 temp = typeof "MOhit";
 console.log(temp);
+
+
+// pencil store karnya sati aapn pencilBox
+let pencilBox = "Pencil";
+console.log(pencilBox);
+let penBox = "pen";
+console.log(penBox);
+// SWAP pencil with pen
+let Box;  //box = temp
+Box = penBox;
+penBox = pencilBox;
+pencilBox = Box;
+console.log("=====");
+console.log(penBox);
+console.log(pencilBox);
+
+
+
