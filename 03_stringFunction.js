@@ -1,16 +1,4 @@
-console.log("QUESTION:COUNT THE CHARACTER IN STRING");
-
-console.log("=================-------------length------------------================");
-
-var text = function(nut){
-    console.log(nut.length);
-}
-var str = "My name is Dollesh Rathod I am from Karanja lad"; //str
-console.log(str);
-text(str);
-
-
-
+var str = "My name is Dollesh Rathod";
 // chatAt();
 console.log("=================-------------charAt()------------------================");
 var nutan = function(str){
@@ -21,7 +9,7 @@ var nutan = function(str){
 
 }
 nutan(str);
-var str1 =" and My name is nutan londe I am from Mumbai";//string
+var str1 =" I am an Engineer";//string
 
 //concat function
 console.log("=================-------------concat()------------------================");
@@ -77,3 +65,30 @@ var change = function(str)
 
 }
 change(str1);
+
+// toUpperCase
+console.log("=================-------------toUpperCase()------------------================");
+var capitalize = function(str){
+    console.log(str.toUpperCase());
+}
+console.log("whole string will converted into uppercase");
+capitalize(str);
+// toLowerCase
+console.log("=================-------------toLowerCase()------------------================");
+var small = function(str){
+    console.log(str.toLowerCase());
+}
+console.log("whole string will coverted into lower case");
+small(str1);
+
+
+// trim
+console.log("=================-------------trim()------------------================");
+var whiteSpaces = function(str)
+{
+    console.log(str.trim());
+}
+var temp = "                      Dollesh             Rathod";
+console.log("It removes all the whitespaces from both the side of string");
+// we can use trimStart() and trimEnd()
+whiteSpaces(temp);
