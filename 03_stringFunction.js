@@ -111,7 +111,7 @@ inc(str);
 console.log("=================-------------split()------------------================");
 
 var studentList  = "Sunil | Anil| Andy| Jenny| Lata";
-var splitResult = studentList.split("|");
+var splitResult = studentList.`split("|")`;
 console.log(splitResult);
 
 
