@@ -113,3 +113,9 @@ console.log("=================-------------split()------------------============
 var studentList  = "Sunil | Anil| Andy| Jenny| Lata";
 var splitResult = studentList.split("|");
 console.log(splitResult);
+
+
+console.log("=================-------------string SUbstitution------------------================");
+fName = "Dollesh";
+lName = "Rathod";
+console.log(`First Name : ${fName} and Last Name :${lName}`);
