@@ -49,12 +49,16 @@ var cut = function(str)
 cut(str);
 cut(str1);
 
+
+
+
 // subString
 console.log("=================-------------substring(start,end)------------------================");
 var sub = function(str){
     console.log("Substring of given string is-:"+ str+" = " + str.substring(11,19));
 }
 sub(str);
+
 
 
 // replace
@@ -73,6 +77,8 @@ var capitalize = function(str){
 }
 console.log("whole string will converted into uppercase");
 capitalize(str);
+
+
 // toLowerCase
 console.log("=================-------------toLowerCase()------------------================");
 var small = function(str){
@@ -92,3 +98,18 @@ var temp = "                      Dollesh             Rathod";
 console.log("It removes all the whitespaces from both the side of string");
 // we can use trimStart() and trimEnd()
 whiteSpaces(temp);
+
+//includes
+console.log("=================-------------includes()------------------================");
+var inc = function(str)
+{
+    console.log(str.includes("name"));
+}
+inc(str);
+
+//split
+console.log("=================-------------split()------------------================");
+
+var studentList  = "Sunil | Anil| Andy| Jenny| Lata";
+var splitResult = studentList.split("|");
+console.log(splitResult);
