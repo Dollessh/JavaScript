@@ -7,7 +7,7 @@ var marriageEligibilityBoys = function (gender,age)
     console.log(result);
 }
 marriageEligibilityBoys("Male", 23);
-marriageEligibilityBoys("Male",20);
+maleMarriageEligibilityBoys("Male",20);
 console.log("======================Eligibility for Girls===================");
 var marriageEligibilityGirls = function(gender,age)
 {
