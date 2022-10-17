@@ -1,4 +1,6 @@
 console.log("=======================================Assignment of 17 Oct===========================");
+console.log("==Q.NO 1================WAF to count vowels from given String using includes==============");
+
 var givenString = "Good Morning IT Champ";
 var str = givenString.toLowerCase();
 const vowel = ["a", "e", "i", "o", "u"];
