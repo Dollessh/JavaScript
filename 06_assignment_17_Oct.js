@@ -1,3 +1,4 @@
+console.log("=======================================Assignment of 17 Oct===========================");
 var givenString = "Good Morning IT Champ";
 var vowels = "aeiou";
 var vowelsArr = vowels.split(" ");
