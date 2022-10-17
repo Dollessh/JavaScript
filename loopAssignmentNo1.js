@@ -74,12 +74,5 @@ function printTable(num)
 }
 printTable(5);
 printTable(10);
-console.log("Write a program to print Reverse Table of Given No");
+// console.log("Write a program to print Reverse Table of Given No");
 
-function revTable(input)
-{
-    var num = input * 10;
-    for(num = inputl;)
-    console.log(res);
-}
-revTable(10);
