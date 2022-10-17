@@ -1,17 +1,22 @@
 console.log("=======================================Assignment of 17 Oct===========================");
 var givenString = "Good Morning IT Champ";
-var vowels = "aeiou";
-var vowelsArr = vowels.split(" ");
-console.log(vowels.length);
-var count=0;
-var lowerCase = givenString.toLowerCase();
-for (let index1 = 0; index1 < lowerCase.length; index1++) {
-   
-        if (vowelsArr.includes(lowerCase)) {
+var str = givenString.toLowerCase();
+const vowel = ["a", "e", "i", "o", "u"];
+
+function countVowel(str) {
+    let count = 0;
+
+    for (let letter of str.toLowerCase()) {
+        if (vowel.includes(letter)) {
             count++;
         }
-        console.log(count);
+    }
+    return count
 }
+var res = countVowel(str);
+console.log(res);
+
+
 
 console.log("==Q.NO 2================WAF to count vowels from given String==============");
 var str = "I love javaScript";
@@ -37,7 +42,7 @@ console.log("==Q.NO 3================WAF Exp to sum all num from 1 to 10========
 var sum = function(){
     var res=0;
     for (let index = 0; index <= 10; index++) {
-        res = index + res
+        res = index + res;
         
     }
     return res;
@@ -65,7 +70,7 @@ var str1 = "Hard work always pays back";
 var str2 = "Soon I will be Angular IT Champ"; 
 
 function evenPositionedChar(str){
-    var res= " ";
+    var res= "";
     for (let index = 0; index < str.length; index++) {
         
         if(index %2 ==0 && str.charAt(index) != " ")
