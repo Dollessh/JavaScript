@@ -99,13 +99,23 @@ var str2 = "Soon I will be Angular IT Champ";
 
 function evenPositionedChar(str){
     var res= "";
-    for (let index = 0; index < str.length; index++) {
+    // for (let index = 0; index < str.length; index++) {
         
+    //     if(index %2 ==0 && str.charAt(index) != " ")
+    //     {
+    //         res = res + str.charAt(index);
+    //     }
+        
+    // }
+    let index = 0;
+    while(index < str.length)
+    {
         if(index %2 ==0 && str.charAt(index) != " ")
-        {
+         {
             res = res + str.charAt(index);
         }
-        
+        index++;
+
     }
     return res;
 }
