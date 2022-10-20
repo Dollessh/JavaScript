@@ -1,47 +1,61 @@
 let teacher = {
-    teacherName: "Gajanan Kharat Sir",
-    subject: "Angular",
-    organization:"Codemind Technology",
-    degrees :{
-        graduation : "IT Engineering",
-        pHD : "Adv Computing",
-        postGraduation :"Full Stack Web Developer",   
+    studDetails: {
+        sName: "Dollesh Rathod",
+        sDOB: "03 May 1998",
+        sMoNo: 9923502416,
+
     },
-    certification :{
-        firstCertificate : "Hacker RAnk Participation",
-        secondCertificate : "Certificate in IFE COurse",
-        thirdCertificate : "Certificate in Adv Programming"
+
+    sQualification: {
+
+        sDegree: {
+            sCollege: "SSGMCE",
+            // sDegree: "BE",
+            sPassOut: 2021,
+            sStream: "IT"
+        },
+        sDiploma: {
+            sDipCollege: "RRK Poly",
+            sDiplomaStream: "CSE",
+            sDipPassout: 2018
+        },
+        sHsc: {
+            sJrCollege: "MJ",
+            sJrStream: "GS",
+            SJePassout: 2015
+        },
+        sSsc: {
+            sSscSchool: "BCC",
+            sSscBoard: "CBSE",
+            sSscPassout: 2013
+        }
     },
-    allDegrees : function()
-    {
-        var displayAllDegrees = teacher.degrees.graduation + ", " + teacher.degrees.pHD + ", "+ teacher.degrees.postGraduation;
-        console.log(`Teacher Degrees are ${displayAllDegrees} and Total degrees are = 3 `);
+    allQualification : function(){
+        return teacher.sQualification;
     },
-    hod: "Dhanaji Sir",
+
+
+
+
+
+
+    sCertification: {
+
+        firstCertificate: "Data Structure and Algorithm in Java",
+        secondCertificate: "Complete C++",
+        thirdCertificate: "Certification In Advance Programming"
+    },
+    concatCertificate: function () {
+        var allCertificate = teacher.sCertification.firstCertificate + "," + teacher.sCertification.secondCertificate + "," + teacher.sCertification.thirdCertificate;
+        return allCertificate;
+    }
+
 }
 
+var result = teacher.concatCertificate();
+console.log(result);
+// var res = ;
+console.table(teacher.allQualification());
 
-console.log("===============================Output======================================");
-console.log(`Name of Teacher = ${teacher.teacherName}`);
-console.log("======================");
-console.log(`Display All Degrees = ${teacher.allDegrees()}` );
-console.log("======================");
-console.log(`Before Modify the subject is= ${teacher.subject} `);
-console.log("======================");
-teacher.subject = "React";
-console.log(`After Modify the subject is= ${teacher.subject} `);
-console.log("Entries in Certification =" + Object.entries(teacher.certification));
-console.log("======================");
-console.log("Entries in Certification  = " +Object.keys(teacher.certification));
-console.log("======================");
-console.log(("Entries in Certification = " +Object.values(teacher.certification)));
-console.log("======================");
-delete teacher.certification.thirdCertificate;
-console.log("After deleting one certificate from Certification = "  +Object.values(teacher.certification));
-console.log("======================");
-teacher.certification.fourthCertificate = "Data Structure and Algo";
-console.log("Added New Certificate = " + teacher.certification.fourthCertificate);
-console.log("======================");
-console.log("Nested Object Certificate = 1) " + teacher.certification.firstCertificate + "2) " + teacher.certification.secondCertificate + " 4)"+ teacher.certification.fourthCertificate);
 
 

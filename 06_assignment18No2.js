@@ -32,3 +32,18 @@ console.log(reverseUsingWhile(str1));
 console.log(reverseUsingWhile(str2));
 // console.log(reverse(str1));
 // console.log(reverse(str2));
+
+
+console.log("Print First 15 Odd no");
+function printOdd()
+{
+    var count =0; // 
+    let idx = 1; // 1
+    while(idx % 2 != 0 && count <= 15)
+    {
+        console.log(idx);//1 3 5 7
+        idx= idx+2;//1 +2=3 +2 =5 +2 =7+2=9
+        count++;//1+1+1+1+1+1
+    }   
+}
+printOdd();
