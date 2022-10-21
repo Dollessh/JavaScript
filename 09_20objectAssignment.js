@@ -59,3 +59,8 @@ console.table(teacher.allQualification());
 
 
 
+console.log("=========== in operator================");
+let isAvailable = "fullName" in mohitPerson;
+console.log(isAvailable);
+console.log("city" in mohitPerson);
+console.log("===========================");
