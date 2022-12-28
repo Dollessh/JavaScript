@@ -48,7 +48,7 @@ class College {
 
         
 }
-console.log("===============================================");
+console.log("=====================object==========================");
 let c = new College();
 c.display();
 let c1 = new College("COEP","Pune");
@@ -69,11 +69,12 @@ function traverseObject(obj)
         if (Object.hasOwnProperty.call(obj, key))
          {
             const element = obj[key];
-            console.log(`"${key}" = "${element}"`);
+            console.log(`${key} = "${element}"`);
             
            
         }
     }
+    
 }
 traverseObject(c1);
 traverseObject(c2);

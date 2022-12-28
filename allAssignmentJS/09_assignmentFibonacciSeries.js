@@ -10,7 +10,7 @@ function fib(num){
         return num;
     }
     console.log( " "+num1);
-    for(i = 1;i<= num;i++)
+    for(i = 1; i<= num; i++)
     {
         console.log(" "+num2);
         let next = num1 +  num2;
@@ -19,4 +19,4 @@ function fib(num){
     }
 
 }
-fib(15);
+fib(20);
